@@ -1,0 +1,97 @@
+@import "color";
+@import "mixin";
+@import "variables";
+
+.change-mobile-page {
+  background-color: #fff;
+  min-height: 100vh;
+
+  .page-bg {
+    margin: 0 $page-padding;
+
+    p {
+      font-size: 16px;
+      line-height: 83px;
+      height: 83px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .signin-phone {
+      position: relative;
+
+      .am-list-item-middle {
+        padding-left: 0;
+      }
+
+      &:after {
+        position: absolute;
+        content: "";
+        border-bottom: 0.5px solid #EFEFEF;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+
+      }
+    }
+
+    .send-code {
+      display: flex;
+
+      .am-list-item-middle {
+        padding-left: 0;
+        flex: 1;
+      }
+
+      .code {
+        width: 93.5px;
+        flex: 0 0 93.5px;
+        font-size: 15px;
+        text-align: center;
+        line-height: 44px;
+        position: relative;
+
+        &:after {
+          position: absolute;
+          content: "";
+          left: 0;
+          top: 12px;
+          border-left: 1px solid #B0B0B0;
+          width: 1px;
+          height: 20px;
+        }
+      }
+
+      .ed-send-code {
+        @extend .code;
+        color: #009AA8;
+      }
+
+      .wait-send-code {
+        @extend .code;
+        text-align: right;
+        color: #333;
+      }
+    }
+
+    .save-btm {
+      width: 100%;
+      margin-top: 62px;
+      height: 45px;
+      background-color: rgba(0, 154, 138, .4);
+      border-radius: 8px;
+
+      .save-p {
+        font-size: 17px;
+        color: #fff;
+        line-height: 45px;
+        text-align: center;
+      }
+    }
+
+    .save-btm-allow {
+      background-color: #009AA8;
+
+    }
+  }
+}

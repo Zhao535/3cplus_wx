@@ -1,0 +1,54 @@
+@import "mixin";
+@import "variables";
+
+.scenes-page {
+  .sceneTypes {
+
+    .sceneType {
+
+
+      .sceneType-name {
+        margin-top: 20px;
+        padding: 0 15px;
+        font-size: 17px;
+        font-weight: 700;
+        color: #333;
+        letter-spacing: 1px;
+      }
+
+      .sceneType-subHeading {
+        font-size: 12px;
+        font-weight: 400;
+        color: #aeaeae;
+        padding-left: 15px;
+      }
+
+      .scroll-container {
+        width: 100%;
+        overflow-x: scroll;
+
+        .scroll-ul {
+          padding: $page-padding;
+
+          .scene {
+            margin-right: 10px;
+            float: left;
+            width: 300px;
+            height: 320px;
+            background: #fff;
+            border-radius: 4px;
+
+            .scene-img {
+              width: 300px;
+              height: 155px;
+              border-radius: 4px 4px 0 0;
+            }
+
+          }
+        }
+      }
+    }
+
+
+  }
+}

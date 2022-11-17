@@ -1,0 +1,96 @@
+@import "color";
+
+.home-wrap {
+  padding-bottom: calc(50px + constant(safe-area-inset-bottom)); /*兼容 IOS<11.2*/
+  padding-bottom: calc(50px + env(safe-area-inset-bottom)); /*兼容 IOS>11.2*/
+
+  .inner-page {
+  }
+
+
+  .btm-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: calc(50px + constant(safe-area-inset-bottom));
+    height: calc(50px + env(safe-area-inset-bottom));
+    background: #fff;
+    box-shadow: 0 -1px 4px rbga(0, 0, 0, .17);
+    display: flex;
+
+    li {
+      flex: 1 1 auto;
+      padding-top: 4px;
+
+      i {
+        display: block;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .home {
+        background-image: url('../3cimages/icon/homeWrap-nav/home-black.png');
+      }
+
+      .choose {
+        background-image: url('../3cimages/icon/homeWrap-nav/choose-black.png');
+      }
+
+      .merchants {
+        background-image: url('../3cimages/icon/homeWrap-nav/merchant-black.png');
+      }
+
+      .shopping-cart {
+        background-image: url('../3cimages/icon/homeWrap-nav/cart-balck.png');
+      }
+
+
+      .profile {
+        background-image: url('../3cimages/icon/homeWrap-nav/profile-black.png');
+      }
+
+      p {
+        margin-top: 3px;
+        font-size: 12px;
+        color: #4A4A4A;
+        text-align: center;
+        line-height: 13px;
+      }
+
+
+      .active {
+        .home {
+          background-image: url('../3cimages/icon/homeWrap-nav/home.png');
+        }
+
+        .choose {
+          background-image: url('../3cimages/icon/homeWrap-nav/choose.png');
+        }
+
+        .merchants {
+          background-image: url('../3cimages/icon/homeWrap-nav/merchant.png');
+        }
+
+        .shopping-cart {
+          background-image: url('../3cimages/icon/homeWrap-nav/cart.png');
+        }
+
+        .profile {
+          background-image: url('../3cimages/icon/homeWrap-nav/profile.png');
+        }
+
+        p {
+          color: $primary-color;
+        }
+      }
+
+    }
+
+  }
+}

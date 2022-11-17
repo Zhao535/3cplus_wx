@@ -1,0 +1,94 @@
+@import "variables";
+@import "mixin";
+
+.profile-edit-page {
+  background: #f8f8f8;
+
+  .options {
+    padding: 10px $page-padding 0;
+    background: #ffffff;
+
+    .option {
+      padding: 10px 0;
+      height: 60px;
+
+      .option-name {
+        margin: 8px 0;
+        float: left;
+        width: 60px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #333333;
+      }
+
+      .right-arrow {
+        margin: 14px 0 14px 12px;
+        float: right;
+        width: 12px;
+        height: 12px;
+        font-size: 16px;
+      }
+
+      .avatar {
+        margin: 5px 0;
+        width: 30px;
+        height: 30px;
+        float: right;
+        font-size: 16px;
+      }
+
+      .option-result {
+        margin: 10px 0;
+        height: 20px;
+        float: right;
+        line-height: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .save-btm {
+
+    margin: 62px 15px 0;
+    height: 45px;
+    background-color: rgba(0, 154, 138, .4);
+    border-radius: 8px;
+
+    .save-p {
+      font-size: 17px;
+      color: #fff;
+      line-height: 45px;
+      text-align: center;
+    }
+  }
+
+  .save-btm-allow {
+    background-color: #009AA8;
+
+  }
+
+  .am-list-item .am-list-line .am-list-content .am-list-extra {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .img-editor {
+    z-index: 9999;
+    position: fixed;
+    background: #fff;
+    border-radius: 8px;
+    top: 0;
+    width: 100% !important;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+
+}
+
+
+.am-picker-popup-item {
+  color: #333333;
+}

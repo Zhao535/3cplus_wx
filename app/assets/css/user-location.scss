@@ -1,0 +1,76 @@
+@import "variables";
+@import "color";
+
+.address-list {
+  .address {
+    padding: 0 $page-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .name-mobile {
+      display: flex;
+      align-items: baseline;
+
+      .default {
+        background: #ffdbdd;
+        width: 32px;
+        height: 15px;
+        border-radius: 2px;
+        color: #D3040F;
+        font-size: 11px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 15px;
+      }
+
+      .address-name {
+        margin-left: 10px;
+        height: 32px;
+        font-size: 17px;
+        font-weight: 400;
+        color: #333333;
+      }
+
+      .address-mobile {
+        margin-left: 10px;
+        height: 32px;
+        color: #9A9A9A;
+        font-weight: 400;
+      }
+
+    }
+
+    .address-detail {
+      font-size: 15px;
+      color: #333333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        border-left: 1px solid $primary-color;
+        padding-left: 10px;
+        width: 50px;
+        line-height: 15px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #009aa8;
+      }
+    }
+  }
+}
+
+.edit-button {
+  width: 100vw;
+  height: calc(50px + constant(safe-area-inset-bottom));
+  height: calc(50px + env(safe-area-inset-bottom));
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  background: $primary-color;
+}

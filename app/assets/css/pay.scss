@@ -1,0 +1,171 @@
+@import "color";
+@import "variables";
+
+.pay-page {
+  background: #f1f2f5;
+
+  .payment {
+    padding: 0 $page-padding;
+    margin-top: 10px;
+    background: #FFFFFF;
+    display: flex;
+    height: 45px;
+    flex-direction: row;
+    align-items: center;
+
+    .payment-name {
+      flex: 0 0 auto;
+      text-align: center;
+      font-size: 14px;
+      line-height: 14px;
+      height: 14px;
+      font-weight: 500;
+      color: #333333;
+
+    }
+
+    .pay-way {
+      flex: 0 0 auto;
+      text-align: center;
+      font-size: 14px;
+      line-height: 14px;
+      height: 14px;
+      font-weight: 500;
+      color: #333333;
+      align-items: flex-end;
+      margin-left: auto;
+    }
+  }
+
+  .qr-code {
+    padding: 14px $page-padding 0;
+    margin-top: 1px;
+    background: #FFFFFF;
+    text-align: center;
+    height: 226px;
+
+    .pay-method {
+      font-size: 14px;
+      font-weight: 500;
+      color: #999999;
+      width: calc(100vw - (#{$page-padding} * 2));
+      text-align: left;
+    }
+
+    .code {
+      margin-top: 20px;
+      width: 120px;
+      height: 120px;
+    }
+
+    .save-code {
+      margin-top: 14px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #999999;
+    }
+  }
+
+  .pay-order {
+    padding: 10px $page-padding 10px;
+    margin-top: 10px;
+    background: #FFFFFF;
+
+    .pay-order-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: #333333;
+
+    }
+
+    .orders {
+
+      margin-top: 20px;
+
+      .order {
+        float: left;
+        margin-right: 10px;
+
+        .order-img {
+          width: calc((100vw - (#{$page-padding} * 2) - 20px) / 3);
+          height: calc((100vw - (#{$page-padding} * 2) - 20px) / 3);
+        }
+
+        &:nth-child(3n+0) {
+          margin-right: 0;
+        }
+      }
+    }
+
+  }
+
+  .pay-bottom {
+    height: 50px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background: #FFFFFF;
+    display: flex;
+
+    .total-price {
+      line-height: 50px;
+      flex: 0 0 120px;
+      width: 120px;
+      font-size: 13px;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+
+      .total-price-title {
+        color: #4a4a4a;
+      }
+
+      .price {
+        color: $primary-color;
+      }
+    }
+
+    .submit-btn {
+      font-size: 16px;
+      font-weight: 500;
+      flex: 1;
+      line-height: 50px;
+      text-align: center;
+      color: #FFFFFF;
+      background: #333333;
+
+    }
+
+  }
+
+  .border {
+    position: relative;
+    width: calc((100vw - (#{$page-padding} * 2) - 20px) / 3);
+    height: calc((100vw - (#{$page-padding} * 2) - 20px) / 3);
+    background: #FFFFFF;
+    border: 1px solid #dfdfdf;
+  }
+
+  .add-order-img {
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+  }
+
+  .remove {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    transform: translateX(50%) translateY(-50%) ;
+    background: url("../../assets/image/common/remove.png") no-repeat;
+    background-size: 25px 25px;
+  }
+
+
+}

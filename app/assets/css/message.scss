@@ -1,0 +1,52 @@
+@import "variables";
+@import "mixin";
+
+.message-page {
+
+  .top-bar {
+    background: #ffffff;
+  }
+
+  .message-type {
+    margin-top: 5px;
+
+    .message {
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      height: 70px;
+      margin-bottom: 1px;
+      padding: 0 $page-padding;
+
+      .message-icon {
+        flex: 0 35px;
+        width: 35px;
+        height: 35px;
+      }
+
+      .have-message {
+        flex: 1;
+        padding-left: 16px;
+
+        .type {
+          font-size: 15px;
+          font-weight: 400;
+          color: #333333;
+
+        }
+
+        .is-have {
+          font-size: 12px;
+          font-weight: 400;
+          color: #9a9a9a;
+        }
+      }
+
+      .arrow-icon {
+        flex: 0 13px;
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+}

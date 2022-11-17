@@ -1,0 +1,10 @@
+@import "mixin";
+@import "variables";
+
+.focus-page {
+  padding: 0 $page-padding;
+
+  .stores {
+    margin-top: 10px;
+  }
+}
