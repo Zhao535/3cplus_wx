@@ -17,7 +17,7 @@ let CollectUtils = (() => {
             }
         })
     };
-
+//我又重做啦
     let collected = (type, fromId) => {
         if (!type || !fromId) {
             return false;

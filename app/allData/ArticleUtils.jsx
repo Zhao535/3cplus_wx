@@ -14,6 +14,7 @@ let ArticleUtils = (() => {
             component.setState({article})
         })
     };
+    //我又重做啦
     return {articleList, article};
 
 })();
