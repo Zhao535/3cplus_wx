@@ -1,7 +1,8 @@
 import {App} from "../common";
 
 let BrandUtils = (() => {
-
+    // 其版本修改
+    
     let merchantBrandList = (component,id) => {
         App.api("usr/product/merchantBrands", {merchantId:id}).then((result) => {
             component.setState({merchantBrands: result})
