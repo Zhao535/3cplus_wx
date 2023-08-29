@@ -1,7 +1,7 @@
 import {App} from "../common";
 
 let ArticleUtils = (() => {
-    //丢丢
+    //重做一下6版本
     let articleList = (component, qo) => {
         App.api("usr/article/items", {qo: JSON.stringify(qo)}).then((result) => {
             component.setState({articles: result.content})
